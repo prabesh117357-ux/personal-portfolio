@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+}
+
+main {
+    text-align: center;
+    padding: 64px;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+h1 {
+    padding-top: 64px;
+    padding-bottom: 24px;
+}
+
+p {
+    padding-bottom: 48px;
+}
+
+.buttons-section {
+    justify-content: center;
+    padding-bottom: 64px;
+}
+
+.buttons-section a {
+    padding: 12px 24px;
+    border: 1px solid #dc2626;
+}
+
+.primary-button {
+    background-color: #dc2626;
+    color: #ffffff;
+}
+
+.outline-button {
+    background-color: transparent;
+    color: #dc2626;
+}

@@ -1,137 +1,190 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prabesh Poudel - Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
     <header>
-        <h1>Prabesh Poudel - Personal Portfolio</h1>
+        <div class="site-header">
+            <a class="brand" href="#about">Prabesh <span>Poudel</span></a>
 
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <main>
 
-        <section id="about">
-            <h2>About Me</h2>
-
-            <img src="/Users/prams/Downloads/barphoto.jpg"
-                 alt="Profile photograph of Prabesh Poudel"
-                 width="200">
-
-            <p>
-                Hello! My name is Prabesh Poudel. I am a student interested
-                in web development and information technology. I enjoy
-                learning how websites are structured and developed using
-                HTML and other web technologies.
+        <section class="hero">
+            <p class="eyebrow">Web Design Student</p>
+            <h1>Building simple and useful websites.</h1>
+            <p class="intro">
+                I am Prabesh Poudel, a student interested in web development
+                and information technology.
             </p>
-
-            <p>
-                My goal is to develop my technical skills and create useful,
-                accessible, and well-structured websites.
-            </p>
+            <a class="button" href="#projects">View My Projects</a>
         </section>
 
-        <section id="skills">
-            <h2>Technical Skills</h2>
+        <section id="about">
+            <div class="section-heading">
+                <h2>About Me</h2>
+            </div>
 
-            <dl>
-                <dt>HTML5</dt>
-                <dd>Creating structured and semantic web pages.</dd>
+            <div class="about-grid">
 
-                <dt>CSS</dt>
-                <dd>Understanding basic website presentation and layout.</dd>
+                <div class="about-copy">
+                    <p>
+                        Hello! My name is Prabesh Poudel. I am a student
+                        interested in web development and information
+                        technology. I enjoy learning how websites are
+                        structured and developed using HTML, CSS, and other
+                        web technologies.
+                    </p>
 
-                <dt>JavaScript</dt>
-                <dd>Creating interactive features for websites.</dd>
+                    <p>
+                        My goal is to improve my technical skills and create
+                        useful, accessible, and well-structured websites.
+                    </p>
 
-                <dt>Git and GitHub</dt>
-                <dd>Managing and publishing source code repositories.</dd>
-            </dl>
+                    <h3>Technical Skills</h3>
+
+                    <dl id="skills">
+                        <dt>HTML5</dt>
+                        <dd>Creating structured and semantic web pages.</dd>
+
+                        <dt>CSS</dt>
+                        <dd>Creating website layouts and visual presentation.</dd>
+
+                        <dt>JavaScript</dt>
+                        <dd>Creating interactive features for websites.</dd>
+
+                        <dt>Git and GitHub</dt>
+                        <dd>Managing and publishing source code repositories.</dd>
+                    </dl>
+                </div>
+
+                <article class="profile-card">
+                    <img src="/Users/prams/Documents/prabesh.jpg"
+                         alt="Profile photograph of Prabesh Poudel">
+                    <p class="profile-caption">
+                        Prabesh Poudel - Web Design and Development Student
+                    </p>
+                </article>
+
+            </div>
         </section>
 
         <section id="projects">
-            <h2>Projects</h2>
 
-            <article>
-                <h3>Personal Portfolio Website</h3>
+            <div class="section-heading">
+                <h2>Projects</h2>
+            </div>
 
-                <p>
-                    This project is a personal portfolio website developed
-                    using semantic HTML5.
-                </p>
+            <div class="project-grid">
 
-                <p>
-                    <a href="https://github.com/YOURUSERNAME/personal-portfolio">
+                <article class="project-card">
+                    <p class="project-number">01</p>
+                    <h3>Personal Portfolio Website</h3>
+
+                    <p>
+                        A personal portfolio website created using semantic
+                        HTML5 and CSS. The project demonstrates page
+                        structure, navigation, responsive layout, and
+                        external CSS styling.
+                    </p>
+
+                    <a href="https://github.com/YOURUSERNAME/personal-portfolio"
+                       target="_blank"
+                       rel="noopener">
                         View Project Repository
                     </a>
-                </p>
-            </article>
+                </article>
 
-            <article>
-                <h3>Student Web Development Project</h3>
+                <article class="project-card">
+                    <p class="project-number">02</p>
+                    <h3>Student Web Development Project</h3>
 
-                <p>
-                    This project demonstrates basic web development concepts
-                    including page structure, navigation, forms, images,
-                    and semantic HTML elements.
-                </p>
+                    <p>
+                        A student web development project demonstrating
+                        basic web development concepts including page
+                        structure, navigation, forms, images, and semantic
+                        HTML elements.
+                    </p>
 
-                <p>
-                    <a href="https://github.com/Prabesh/student-web-project">
+                    <a href="https://github.com/Prabesh/student-web-project"
+                       target="_blank"
+                       rel="noopener">
                         View Project Repository
                     </a>
-                </p>
-            </article>
+                </article>
+
+            </div>
         </section>
 
         <section id="contact">
-            <h2>Contact Me</h2>
 
-            <form action="#" method="post">
+            <div class="section-heading">
+                <h2>Contact Me</h2>
+            </div>
 
-                <p>
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" required>
-                </p>
+            <div class="contact-grid">
 
-                <p>
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
-                </p>
+                <div>
+                    <p class="contact-lead">
+                        If you would like to contact me, please use the form
+                        to send a message.
+                    </p>
+                </div>
 
-                <p>
-                    <label for="message">Message:</label>
-                    <textarea id="message"
-                              name="message"
-                              rows="6"
-                              cols="40"
-                              required></textarea>
-                </p>
+                <form action="#" method="post">
 
-                <p>
-                    <button type="submit">Send Message</button>
-                </p>
+                    <fieldset>
+                        <legend>Send a Message</legend>
 
-            </form>
+                        <label for="name">Name</label>
+                        <input type="text"
+                               id="name"
+                               name="name"
+                               required>
+
+                        <label for="email">Email</label>
+                        <input type="email"
+                               id="email"
+                               name="email"
+                               required>
+
+                        <label for="message">Message</label>
+                        <textarea id="message"
+                                  name="message"
+                                  rows="6"
+                                  required></textarea>
+
+                        <button type="submit">Send Message</button>
+                    </fieldset>
+
+                </form>
+
+            </div>
         </section>
 
     </main>
 
     <footer>
         <p>&copy; 2026 Prabesh Poudel. All rights reserved.</p>
+        <a class="email-link" href="mailto:prabesh@example.com">
+            Email Me
+        </a>
     </footer>
 
 </body>
